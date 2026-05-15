@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: #f5f3ed;
+}
+
+.section1{
+    width: 100%;
+    min-height: 100vh;
+    padding: 60px 0;
+}
+
+.main-title{
+    text-align: center;
+    font-size: 60px;
+    color: #264d2f;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.second-title{
+    margin-top: 120px;
+}
+
+.slider-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.slider-card{
+    width: 1200px;
+    height: 550px;
+    background: white;
+    border-radius: 40px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    transition: 0.4s;
+}
+
+.slider-card:hover{
+    transform: translateY(-5px);
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+.image-block{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.slider-image:hover{
+    transform: scale(1.05);
+}
+
+.content-block{
+    width: 50%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mini-title{
+    color: #6f8b73;
+    font-size: 18px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.tea-title{
+    font-size: 58px;
+    color: #264d2f;
+    margin-bottom: 25px;
+}
+
+.tea-text{
+    font-size: 20px;
+    line-height: 36px;
+    color: #666;
+    margin-bottom: 35px;
+}
+
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.buttons button{
+    padding: 14px 34px;
+    border: none;
+    border-radius: 14px;
+    background: #264d2f;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buttons button:hover{
+    background: #3f734b;
+    transform: scale(1.05);
+}
+.pp{
+    font-size: 20px;
+}
+
+.dots{
+    display: flex;
+    gap: 12px;
+    margin-top: 35px;
+}
+
+.dot{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #ccc;
+    transition: 0.3s;
+}
+
+.active{
+    background: #264d2f;
+    transform: scale(1.3);
+}
